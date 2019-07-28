@@ -10,7 +10,7 @@
             $("#userInput").val("");
             //comment
     
-            var queryURL = "www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + myExpression + "&safeSearch=strict&key=AIzaSyBtTKhUd5u7vSo3QD8S0k7mIFbFJGd0ooQ HTTP/1.1";
+            var queryURL = "www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=" + myExpression + "&safeSearch=strict&key=AIzaSyBtTKhUd5u7vSo3QD8S0k7mIFbFJGd0ooQ";
     
         $.ajax({
             url: queryURL, 
@@ -23,4 +23,5 @@
         })
     })
     })
+
     

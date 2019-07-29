@@ -19,11 +19,10 @@
         
         }).then(function (response)
         {
-            var results = response.videoId;
+            console.log (response)
+            var results = response.items[0].id.videoId;
 
-        console.log(results);
-
-                $("#urbanDiv").html('<iframe id="youtubeFrame" width="560" height="315" src="https://www.youtube-nocookie.com/embed/"' + results + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                $("#youtubeDiv").html('<iframe id="youtubeFrame" width="560" height="315" src="https://www.youtube-nocookie.com/embed/"' + results + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
             
         })
     })
